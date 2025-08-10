@@ -11,9 +11,6 @@ async function startServer() {
     await sequelize.sync();
     console.log('✅ Modelos sincronizados con la base de datos.');
 
-    // Verificar configuración de EmailService
-    await EmailService.verificarConexion();
-
     const port = process.env.PORT || 8080
 
     app.listen(port, () => {

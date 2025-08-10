@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    return res.json({ result: 'BACKEND TIENDITA ONLINE - FUNCIONA CORRECTAMENTE ✅'})
+    return res.json({ result: 'BACKEND TIENDITA ONLINEE - FUNCIONA CORRECTAMENTE ✅'})
 });
 
 // Rutas de autenticación (sin seguridad por ahora)
