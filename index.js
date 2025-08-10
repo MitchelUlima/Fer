@@ -1,4 +1,4 @@
-﻿import app from './app.js';
+import app from './app.js';
 import sequelize from './src/config/dataBase.js';
 
 const PORT = 8080;
@@ -10,6 +10,7 @@ async function startServer() {
     
     await sequelize.sync();
     console.log('✅ Modelos sincronizados con la base de datos.');
+
 
     const port = process.env.PORT || 8080
 
